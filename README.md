@@ -4,7 +4,7 @@ Leitor de RSS local que reproduz fielmente a interface do [Feedly](https://feedl
 
 ## Estado atual
 
-Fase de design. Nenhum código de aplicação foi escrito ainda. O projeto segue um fluxo spec-driven: brainstorm → grill → PRD → aprovação → execução.
+Fase de execução da fatia 1 (leitor base). O projeto segue um fluxo spec-driven: brainstorm → grill → PRD → aprovação → execução. Progresso por marco em [HANDOFF.md](HANDOFF.md).
 
 ## Princípios
 
@@ -28,4 +28,47 @@ Fase de design. Nenhum código de aplicação foi escrito ainda. O projeto segue
 
 ## Como rodar
 
-Ainda não há o que rodar. Esta seção será preenchida quando a stack for aprovada na spec.
+### Requisitos
+
+- **Node 26** (a versão está em `.nvmrc`; com `nvm`, rode `nvm use`).
+- **pnpm 12** (`npm i -g pnpm@12`).
+
+### Instalação
+
+```bash
+pnpm install
+```
+
+### Comandos
+
+| Comando | O que faz |
+|---|---|
+| `pnpm dev` | Sobe o servidor em watch (porta 3000) e o Vite em `http://localhost:5173` com proxy de `/api`. Use para desenvolver. |
+| `pnpm start` | Faz o build completo, sobe um processo em `http://localhost:3000` servindo API e SPA, e abre o navegador. |
+| `pnpm build` | Compila `packages/shared`, `apps/web` e `apps/server`. |
+| `pnpm serve` | Sobe o servidor já compilado, sem build e sem abrir o navegador. |
+| `pnpm test` | Testes unitários (Vitest) e end-to-end (Playwright). |
+| `pnpm test:unit` / `pnpm test:e2e` | Cada suíte isolada. |
+| `pnpm lint` | ESLint em todo o repositório. |
+| `pnpm typecheck` | `tsc --build` em todos os pacotes. |
+| `pnpm format` | Prettier (código e configuração; docs ficam de fora). |
+
+### Variáveis de ambiente
+
+| Variável | Padrão | Para quê |
+|---|---|---|
+| `PORT` | `3000` | Porta do servidor. |
+| `FEEDLY_DATA_DIR` | `./data` | Onde ficam `feedly.db` e `favicons/`. |
+| `LOG_LEVEL` | `info` | Nível do pino. |
+
+Se a porta 3000 já estiver ocupada, o servidor encerra com uma mensagem explicando o motivo; suba com `PORT=3001 pnpm start`.
+
+### Estrutura
+
+```
+apps/server/     API Hono, agendador de feeds, estáticos
+apps/web/        SPA React + Vite
+packages/shared/ Tipos e schemas compartilhados
+e2e/             Testes Playwright
+data/            Banco e favicons (fora do git)
+```

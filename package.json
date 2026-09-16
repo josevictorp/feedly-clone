@@ -1,0 +1,37 @@
+{
+  "name": "feedly-clone",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local Feedly clone: a visually faithful RSS reader.",
+  "packageManager": "pnpm@12.4.2",
+  "engines": {
+    "node": ">=26",
+    "pnpm": ">=12"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @feedly/shared build && pnpm --parallel --filter \"@feedly/*\" dev",
+    "build": "pnpm --filter @feedly/shared build && pnpm --filter @feedly/web build && pnpm --filter @feedly/server build",
+    "start": "pnpm build && node apps/server/dist/index.js --open",
+    "serve": "node apps/server/dist/index.js",
+    "test": "pnpm test:unit && pnpm test:e2e",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "typecheck": "tsc --build --force"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.1",
+    "eslint": "^10.10.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.7",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.70.0",
+    "vitest": "^5.0.1"
+  }
+}

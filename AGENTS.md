@@ -12,7 +12,7 @@ Este arquivo existe para qualquer agente que não seja a sessão principal do Cl
 
 ## O que este projeto é
 
-Clone local do Feedly com fidelidade visual total e recursos premium. Sem hospedagem. Fase atual: design (nenhum código de app ainda).
+Clone local do Feedly com fidelidade visual total e recursos premium. Sem hospedagem. Fase atual: execução da fatia 1 (leitor base), conforme o PRD em `docs/prd/`.
 
 ## Regras que valem para todos os agentes
 
@@ -32,7 +32,29 @@ Clone local do Feedly com fidelidade visual total e recursos premium. Sem hosped
 
 ## Stack e comandos
 
-Stack fixada na spec (seção 13): Node 26, pnpm, TypeScript; Hono, Drizzle + better-sqlite3, feedsmith; Vite, React 19, TanStack Query/Virtual, Zustand, CSS Modules; Vitest, Playwright. Comandos (`pnpm dev`, `pnpm start`, `pnpm test`, `pnpm lint`, `pnpm typecheck`) passam a existir no marco M0 do PRD; até lá não há o que rodar.
+Stack fixada na spec (seção 13): Node 26, pnpm 12, TypeScript estrito; Hono 4 + `@hono/node-server` 2, Drizzle 0.45 + better-sqlite3 13, feedsmith 2.x, sanitize-html, pino; Vite 8, React 19, react-router, TanStack Query/Virtual, Zustand, CSS Modules; Vitest, Playwright 1.63.
+
+Monorepo pnpm com `apps/server`, `apps/web` e `packages/shared`. Comandos na raiz:
+
+| Comando | O que faz |
+|---|---|
+| `pnpm install` | Instala tudo. |
+| `pnpm dev` | Servidor em watch (3000) + Vite (5173) com proxy de `/api`. |
+| `pnpm build` | Compila shared → web → server. |
+| `pnpm start` | Build e sobe em `http://localhost:3000`, abrindo o navegador. |
+| `pnpm serve` | Sobe o build já feito, sem abrir o navegador. |
+| `pnpm test` | `test:unit` (Vitest) e `test:e2e` (Playwright). |
+| `pnpm lint` | ESLint (flat config em `eslint.config.mjs`). |
+| `pnpm typecheck` | `tsc --build --force` na solução. |
+
+Convenções de código:
+
+- ESM em todo lugar (`"type": "module"`). TypeScript estrito, sem `any`.
+- Imports relativos levam a extensão `.ts`/`.tsx` (`rewriteRelativeImportExtensions`); em dev o servidor roda direto do fonte, via type stripping do Node 26.
+- Nada de `console.*` no servidor: use o `logger` do pino em `apps/server/src/logger.ts`.
+- Variáveis de ambiente: `PORT` (3000), `FEEDLY_DATA_DIR` (`./data`), `LOG_LEVEL` (`info`).
+- TDD obrigatório no motor de feeds, no agendador e na API (PRD, seção 11).
+- Prettier não toca em `docs/`, `.claude/` nem em `*.md`: specs aprovadas e docs de controle são escritas à mão.
 
 ## Skills
 

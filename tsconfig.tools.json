@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["ES2024"],
+    "types": ["node"],
+    "composite": true,
+    "outDir": "./node_modules/.cache/tsc/tools"
+  },
+  "include": [
+    "e2e/**/*.ts",
+    "playwright.config.ts",
+    "vitest.config.ts",
+    "scripts/**/*.ts",
+    "apps/web/vite.config.ts"
+  ]
+}

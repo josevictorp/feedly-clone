@@ -1,0 +1,12 @@
+node_modules
+dist
+data
+docs/
+.claude/
+pnpm-lock.yaml
+test-results
+playwright-report
+.playwright-cache
+
+# Project control docs are hand-written prose; Prettier reflows their tables.
+*.md

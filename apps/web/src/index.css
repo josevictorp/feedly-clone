@@ -1,0 +1,14 @@
+/*
+ * Baseline only. The real Feedly tokens (colors, typography, spacing) land in
+ * M4, extracted from docs/research.
+ */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
