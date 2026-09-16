@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:admin="http://webns.net/mvcb/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+>
+
+<channel rdf:about="https://slashdot.org/">
+<title>Slashdot</title>
+<link>https://slashdot.org/</link>
+<description>News for nerds, stuff that matters</description>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright Slashdot Media. All Rights Reserved.</dc:rights>
+<dc:date>2026-09-16T23:32:44+00:00</dc:date>
+<dc:publisher>Slashdot Media</dc:publisher>
+<dc:creator>feedback@slashdot.org</dc:creator>
+<dc:subject>Technology</dc:subject>
+<syn:updateBase>1970-01-01T00:00+00:00</syn:updateBase>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="https://hardware.slashdot.org/story/26/09/14/0536219/as-part-of-californias-coast-begins-to-crumble-is-the-clock-ticking-on-moving-radioactive-waste?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://slashdot.org/story/26/09/16/0619212/anthropic-commits-to-independent-ai-evaluators-wants-slower-development-nvidias-ceo-wants-it-as-fast-as-you-can?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://news.slashdot.org/story/26/09/16/0352217/firefox-touts-lower-cpu-use-for-large-jpegs-faster-pdf-viewer-startup-and-ai-controls?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://news.slashdot.org/story/26/09/16/0454223/americas-cryptocurrency-clarity-act-fails-spectacularly-despite-hundreds-of-millions-in-industry-lobbying?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://news.slashdot.org/story/26/09/15/2115242/ubuntus-rust-ification-hits-new-milestone-coreutils-migration-is-complete?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://entertainment.slashdot.org/story/26/09/14/0115231/while-hollywood-fears-an-ai-future-chinas-film-industry-is-embracing-it?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://science.slashdot.org/story/26/09/12/189245/scientists-discover-mysterious-new-x-ray-objects-unlike-any-they-have-seen-before?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://yro.slashdot.org/story/26/09/15/0032227/cops-searched-thousands-of-flock-cameras-for-reasons-of-lmao-idk-hehe-and-asdfg?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://science.slashdot.org/story/26/09/14/2246218/math-professor-accuses-openai-of-copying-his-work-says-ai-compute-power-makes-racing-to-publish-pointless?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://slashdot.org/story/26/09/14/0611201/chatgpt-using-lawyer-cited-its-fake-witnesses-and-police-testimony-in-court?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://games.slashdot.org/story/26/09/14/2019212/reservations-go-live-for-valves-steam-frame-vr-headset-an-experiment-in-progress?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://slashdot.org/story/26/09/13/0523208/a-visit-to-san-franciscos-ai-run-store-no-customers-nothing-useful-and-losing-money-fast?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://yro.slashdot.org/story/26/09/14/0446243/no-rolling-power-outages-for-california-since-2020---thanks-to-17000-mw-of-new-battery-storage?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://games.slashdot.org/story/26/09/14/0153249/union-contract-with-microsoft-ratified-by-1900-blizzard-developers-and-workers?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="https://news.slashdot.org/story/26/09/13/2334206/should-us-open-weight-ai-labs-distill-frontier-models-too?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="https://a.fsdn.com/sd/topics/topicslashdot.gif" />
+<textinput rdf:resource="https://slashdot.org/search.pl" />
+</channel>
+<image rdf:about="https://a.fsdn.com/sd/topics/topicslashdot.gif">
+<title>Slashdot</title>
+<url>https://a.fsdn.com/sd/topics/topicslashdot.gif</url>
+<link>https://slashdot.org/</link>
+</image>
+<item rdf:about="https://hardware.slashdot.org/story/26/09/14/0536219/as-part-of-californias-coast-begins-to-crumble-is-the-clock-ticking-on-moving-radioactive-waste?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>As Part of California's Coast Begins to Crumble, Is the Clock Ticking on Moving Radioactive Waste?</title>
+<link>https://hardware.slashdot.org/story/26/09/14/0536219/as-part-of-californias-coast-begins-to-crumble-is-the-clock-ticking-on-moving-radioactive-waste?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>"As parts of the Southern California coastline crumbled into the sea, slammed by intense waves and flooding in recent days, oceanographer Kim McCoy had one thing on his mind," reports the Los Angeles Times. 
+
+He was thinking about "the nuclear waste set in concrete on the beach near San Clemente at the shuttered San Onofre nuclear power plant."
+
+ "Rising sea levels, storm waves, El Ni&amp;ntilde;o which increases wave height ... these could wash away a section of the walkway that protects the San Onofre seawall, and the waste canisters are just 100 feet away from that," the former wave dynamics researcher and longtime advocate against beach storage of nuclear waste said. Most experts agree the risk of erosion damaging the nuclear waste storage system is extremely low in the near term. The plant's owner, Southern California Edison, has promised the California Coastal Commission to move the waste to higher elevation on-site if modeling shows sea level rise and erosion will start to pose a challenge. But the recent waves, fueled by Hurricane Marie far away in the Pacific, resurfaced the issue of the ultimate fate of the highly radioactive spent fuel that used to power the reactors. "At the moment, it is under control, I think it's essential to say that," said James Day, a geology professor at UC San Diego. "But geologically we must be thinking long term. The waste lasts for hundreds, if not thousands of generations...." [In 2103 some of the site's canisters' approach their intended 100-year lifespans, and the utility may have to start the transfer into new cansiters.] 
+
+The distinctive twin domes that once housed the reactor cores will start coming down early next year. But the 3.6 million pounds of high-level waste will stay in the coastal community indefinitely. How much of a safety hazard that is depends on whom you ask. "San Onofre is sitting on some fairly young rocks in a seismically active region," Day said at a recent symposium at the Scripps Seaside Forum in La Jolla, hosted by the Samuel Lawrence Foundation. "This is not the sort of place you would leave nuclear waste." Others noted that collapse of beach slopes could make the site more vulnerable to tsunamis. They spoke of the corrosive effects of the ocean air on the steel canisters that hold the waste... 
+
+Edison says its system will be safe for decades to come. "The maximum credible tsunami here would not even overtake the seawall," said Manuel Camargo, principal manager of decommissioning for Edison, standing on the concrete pad that holds the steel waste storage canisters. "The maximum credible earthquake, somewhere around a 7.0 magnitude, would produce something about half of what this system is designed to withstand...." Edison is bolstering a path below the seawall. Based on state data from the California Ocean Protection Council, the seawall would not be inundated before 2050, Camargo said... 
+
+
+Plans for a deep geological repository beneath Yucca Mountain in Nevada crumbled in the face of local opposition in 2011. Utilities around the U.S. now sue the federal government every year to recoup their storage expenses because the Department of Energy has not come through on its promise. The lawsuits cost taxpayers $2 million a day, according to Camargo.
+"It's so safe that it's almost a problem," Camargo said. "It's not a priority to a lot of folks to move it." 
+
+"The Trump administration's Department of Energy wants to create 'campuses' in several states to store waste," the article points out, "and, in exchange, give local jurisdictions funding to develop different aspects of the nuclear cycle &amp;mdash; such as fuel creation, power generation and potentially fuel recycling..." 
+
+"The administration wants to address the fact that waste is sitting at 80 reactor sites around the country. It also needs places for waste from new reactors it wants to build."&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=As+Part+of+California's+Coast+Begins+to+Crumble%2C+Is+the+Clock+Ticking+on+Moving+Radioactive+Waste%3F%3A+https%3A%2F%2Fhardware.slashdot.org%2Fstory%2F26%2F09%2F14%2F0536219%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fhardware.slashdot.org%2Fstory%2F26%2F09%2F14%2F0536219%2Fas-part-of-californias-coast-begins-to-crumble-is-the-clock-ticking-on-moving-radioactive-waste%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://hardware.slashdot.org/story/26/09/14/0536219/as-part-of-californias-coast-begins-to-crumble-is-the-clock-ticking-on-moving-radioactive-waste?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=24097054&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>EditorDavid</dc:creator>
+<dc:date>2026-09-16T22:04:00+00:00</dc:date>
+<dc:subject>power</dc:subject>
+<slash:department>California-dreaming</slash:department>
+<slash:section>hardware</slash:section>
+<slash:comments>19</slash:comments>
+<slash:hit_parade>19,19,16,16,3,1,0</slash:hit_parade>
+</item>
+<item rdf:about="https://slashdot.org/story/26/09/16/0619212/anthropic-commits-to-independent-ai-evaluators-wants-slower-development-nvidias-ceo-wants-it-as-fast-as-you-can?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Anthropic Commits to Independent AI Evaluators, Wants Slower Development. Nvidia's CEO Wants It 'As Fast as You Can'</title>
+<link>https://slashdot.org/story/26/09/16/0619212/anthropic-commits-to-independent-ai-evaluators-wants-slower-development-nvidias-ceo-wants-it-as-fast-as-you-can?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>"Anthropic's CEO took the stage at a conference in San Francisco on Tuesday to reiterate his call for a slowdown of AI development," reports the Guardian, " while Nvidia's CEO argued against slowing its development. "Run as fast as you can."
+
+Amodei is calling for three courses of action: embedding third-party evaluators inside AI companies; coordinating safety standards among Democratic countries; and, eventually, larger global coordination. At Dreamforce, Amodei said Anthropic has committed to independent evaluators and was "going to have a dialogue with the rest of the industry" on the other two steps. Amodei, xAI's Elon Musk and OpenAI's Sam Altman have recently called for a slowdown in the pace of AI development. ["Dario is right," Musk posted on X.com] 
+Huang, who also made an appearance at Dreamforce on Tuesday, said companies should not slow down AI development. He argued that new regulations were not necessary, advising AI companies to simply wait to release products until they know they are safe rather than begging the US government to intervene... One day prior at the All-In summit in Los Angeles, Donald Trump called Huang while the CEO was on stage. Huang put the president on speakerphone as Trump called the growing concern about AI a "hoax" and asserted again that a slowdown would only benefit China... 
+
+[OpenAI's] Altman said AI models had advanced so quickly that monitoring and security need to be treated with a "new level of rigor", calling an incident in which OpenAI agents hacked into another company a "wake-up call" for the industry. He also said the public was very "right to be afraid" of AI because of the potential loss of control, and the possibility of a small group of powerful AI companies exerting their views on the world. 
+
+The cofounder of Google DeepMind posted on X that "Dario's essay points towards the right path forward." And in an internal memo, Microsoft's Satya Nadella endorsed broader third-party testing and warned that companies must take time to make the technology safe, Business Insider reports. Monday Microsoft also published a 37-page training manual "for how we develop our AI, and how we intend it to function during deployment," requesting public feedback. 
+
+But Michael Burry "is not buying it," reports The Street. The investor made famous in The Big Short "dismissed the united front as 'self-serving' and laid out four numbered objections..."
+
+He argued that large language models are not artificial general intelligence, so there is nothing meaningful left to slow down. Fast competition benefits incumbents, he said, and danger warnings work as hype ahead of IPOs. The whole exercise, he added, could mask growth that is already slowing as those IPOs get pushed back. 
+
+Former Meta AI chief Yann LeCun is also skeptical, posting on X.com that Anthropic's Dario Amodei "was already claiming that GPT2 was too dangerous to open source back in 2019. I made fun of them then. Everyone should make fun of them now." 
+
+Timnit Gebru, the co-lead of Google's AI ethics team who was fired in 2020, even thinks the AI companies are stoking fears of extinction "to avoid discussing actual harms, like autonomous weapons," according to Wired. 
+
+But others still remain concerned. "I've been in rooms with the hyperscalers, and the Trump administration officials, and none of them know what to do," CNN commentator Van Jones said in a recent panel discussion. "So I do want to say: nobody's flying the plane on this... I think that the ethicists that work for them &amp;mdash; when they are quitting, and they are running out, and they're pointing back at the building and they're waving their arms, and saying 'I'm seeing stuff that's scaring me' &amp;mdash; we should take that very seriously."&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Anthropic+Commits+to+Independent+AI+Evaluators%2C+Wants+Slower+Development.+Nvidia's+CEO+Wants+It+'As+Fast+as+You+Can'%3A+https%3A%2F%2Fslashdot.org%2Fstory%2F26%2F09%2F16%2F0619212%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fslashdot.org%2Fstory%2F26%2F09%2F16%2F0619212%2Fanthropic-commits-to-independent-ai-evaluators-wants-slower-development-nvidias-ceo-wants-it-as-fast-as-you-can%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://slashdot.org/story/26/09/16/0619212/anthropic-commits-to-independent-ai-evaluators-wants-slower-development-nvidias-ceo-wants-it-as-fast-as-you-can?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=24098902&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>EditorDavid</dc:creator>
+<dc:date>2026-09-16T17:34:00+00:00</dc:date>
+<dc:subject>ai</dc:subject>
+<slash:department>rise-of-the-machines</slash:department>
+<slash:section>slashdot</slash:section>
+<slash:comments>73</slash:comments>
+<slash:hit_parade>73,72,67,62,13,8,5</slash:hit_parade>
+</item>
+<item rdf:about="https://news.slashdot.org/story/26/09/16/0352217/firefox-touts-lower-cpu-use-for-large-jpegs-faster-pdf-viewer-startup-and-ai-controls?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Firefox Touts Lower CPU Use for Large JPEGs, Faster PDF Viewer Startup (and AI Controls)</title>
+<link>https://news.slashdot.org/story/26/09/16/0352217/firefox-touts-lower-cpu-use-for-large-jpegs-faster-pdf-viewer-startup-and-ai-controls?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Firefox 156 is the second release since Mozilla moved to a twice-monthly release schedule, and the blog OMG Ubuntu notes it has faster start-up times for its built-in PDF viewer and also lower CPU usage when viewing large JPEG images:
+
+In Firefox 156, the browser now uses libjpeg-turbo's IDCT scaling to reduce images during decoding, rather than loading a full-size image into memory and then shrinking it. Benchmarks from the bug report show up to 20x less memory used during very large image loading, and decoding is up to twice as fast. Since these speeds were quite fast already, there's no perceptible difference to users. Behind the scenes, it's more efficient. 
+
+Firefox's built-in PDF viewer starts up to 45% faster in this release. The browser now loads the background PDF.js worker sooner, rather than launching it only when needed. 
+
+Sponsored suggestions in the address bar are live for users in France, Germany and Italy (Ouais!, Juhu!, etc). These are already available in some other locales. Don't want them? Disable them via Settings &amp;gt; Search &amp;gt; Firefox Suggest &amp;gt; Suggestions from Sponsors. 
+Besides that, the rest of this release is primarily bug fixes &amp;mdash; worthwhile and welcome as always.
+ 
+
+And in about two weeks Firefox 157 will be released, reports PC World. "That update should add support for JPEG XL (JXL), a modern image format that offers the same quality as JPEG at a significantly smaller size. Although JPEG XL was launched in 2021, Safari is the only browser to support it yet. For a short period, Chrome also supported it, but that ended in 2022." 
+
+Also, a recent Firefox blog post emphasized that it supports whatever level of AI engagement "is right for you... Because the only person telling you how much AI you need should be you."
+
+Opting out of upcoming and current AI features on your browser should not require endless navigation through multiple Settings pages. That's why Firefox offers an AI controls section within its General Settings panel. A single, easily located place where you can block current and future AI features and related pop-ups with the swipe of a toggle... 
+
+For the many people who sit in the middle of the AI usage spectrum, we made sure you can opt in and out of specific features in line with your preferences. Capabilities like AI translations, image alt text in Firefox PDF viewer, tab group suggestions, and key points in link previews can all be individually switched on and off, ensuring you can enjoy such offerings on a case by case basis as it suits your needs... 
+
+Smart Window is Firefox's most integrated AI experience, but that doesn't mean it compromises our commitment to choice, privacy, and transparency. Our newest window type, which we've been polishing and testing in beta, uses only the context you share with it to help you move work forward and across the finish line. When permitted by you, its built-in, AI-powered assistant can work directly with your open tabs and browsing history to connect the dots. This means comparing information, generating recommendations, summarizing pages, and planning projects without having to feed every crumb of context from your previous and current browsing activity each time you enter a new prompt. 
+
+And if you want to block Google's AI Overviews, there's over 100 extensions to choose from.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Firefox+Touts+Lower+CPU+Use+for+Large+JPEGs%2C+Faster+PDF+Viewer+Startup+(and+AI+Controls)%3A+https%3A%2F%2Fnews.slashdot.org%2Fstory%2F26%2F09%2F16%2F0352217%2F%3Futm_source%3Dtwitter%26utm_medium%3Dtwitter"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fnews.slashdot.org%2Fstory%2F26%2F09%2F16%2F0352217%2Ffirefox-touts-lower-cpu-use-for-large-jpegs-faster-pdf-viewer-startup-and-ai-controls%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://news.slashdot.org/story/26/09/16/0352217/firefox-touts-lower-cpu-use-for-large-jpegs-faster-pdf-viewer-startup-and-ai-controls?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="https://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=24098848&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>EditorDavid</dc:creator>
+<dc:date>2026-09-16T13:04:00+00:00</dc:date>
+<dc:subject>firefox</dc:subject>
+<slash:department>building-browsers</slash:department>
+<slash:section>news</slash:section>
+<slash:comments>76</slash:comments>
+<slash:hit_parade>76,74,68,61,17,7,2</slash:hit_parade>
+</item>
+
+<textinput rdf:about="https://slashdot.org/search.pl">
+<title>Search Slashdot</title>
+<description>Search Slashdot stories</description>
+<name>query</name>
+<link>https://slashdot.org/search.pl</link>
+</textinput>
+</rdf:RDF>

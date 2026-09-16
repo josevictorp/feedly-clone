@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:npr="https://www.npr.org/rss/" xmlns:nprml="https://api.npr.org/nprml" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>NPR Topics: Pop Culture</title>
+    <link>https://www.npr.org/templates/story/story.php?storyId=1048</link>
+    <description>News and commentary on popular culture trends. Download the Pop Culture podcast.</description>
+    <language>en</language>
+    <copyright>Copyright 2024 NPR - For Personal Use Only</copyright>
+    <generator>Story API Shim 1.2.24</generator>
+    <lastBuildDate>Wed, 16 Sep 2026 19:40:39 -0400</lastBuildDate>
+    <image>
+      <url>https://media.npr.org/images/podcasts/primary/npr_generic_image_300.jpg?s=200</url>
+      <title>NPR Topics: Pop Culture</title>
+      <link>https://www.npr.org/sections/pop-culture/</link>
+    </image>
+    <item>
+      <title>See the Emmys 2026 red carpet looks</title>
+      <description>The 78th Emmy Awards are Monday night. See the stars as they arrived. </description>
+      <pubDate>Mon, 14 Sep 2026 20:00:00 -0400</pubDate>
+      <link>https://www.npr.org/sections/the-picture-show/2026/09/14/nx-s1-5957569/emmys-2026-red-carpet-photos</link>
+      <guid>https://www.npr.org/sections/the-picture-show/2026/09/14/nx-s1-5957569/emmys-2026-red-carpet-photos</guid>
+      <content:encoded><![CDATA[<img src='https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5718x3812+0+0/resize/5718x3812!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F16%2F9b%2F42b990254154aa3d4720a827b697%2Fap26257819032282.jpg' alt='Host Mariska Hargitay arrives at the 78th Emmy Awards in Los Angeles on Monday.'/><p>The 78th Emmy Awards are Monday night. See the stars as they arrived. </p><p>(Image credit: Mark J. Terrill)</p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5957569' />]]></content:encoded>
+      <dc:creator>Emily Bogle</dc:creator>
+    </item>
+    <item>
+      <title>The Emmys are Monday night. Here&apos;s how to watch</title>
+      <description>Noah Kahan will perform &quot;Bridge Over Troubled Water&quot; as part of the In Memoriam segment.</description>
+      <pubDate>Mon, 14 Sep 2026 06:00:00 -0400</pubDate>
+      <link>https://www.npr.org/2026/09/14/nx-s1-5967571/emmys-2026-when-are-the-emmys-how-to-watch</link>
+      <guid>https://www.npr.org/2026/09/14/nx-s1-5967571/emmys-2026-when-are-the-emmys-how-to-watch</guid>
+      <content:encoded><![CDATA[<img src='https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5901x3934+0+0/resize/5901x3934!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F24%2F6b%2F9d3b29b74e728b4fd93cc9aeefbb%2Fap26253606319486.jpg' alt='An Emmy statue, pictured during a press preview for the 78th Primetime Emmy Awards last week in Los Angeles.'/><p>Noah Kahan will perform "Bridge Over Troubled Water" as part of the In Memoriam segment.</p><p>(Image credit: Caroline Brehman)</p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5967571' />]]></content:encoded>
+      <dc:creator>Clare Lombardo</dc:creator>
+    </item>
+    <item>
+      <title>Can you imagine a universe without a new &apos;Star Trek&apos; on the horizon?</title>
+      <description>As &lt;em&gt;Star Trek&lt;/em&gt; celebrates its 60th birthday, the long-running franchise is also grappling with the challenges of timing and technology. &quot;Its audience is aging,&quot; says &lt;em&gt;Strange New Worlds&lt;/em&gt; star Anson Mount.</description>
+      <pubDate>Sun, 13 Sep 2026 07:00:00 -0400</pubDate>
+      <link>https://www.npr.org/2026/09/13/nx-s1-5957544/star-trek-anniversary</link>
+      <guid>https://www.npr.org/2026/09/13/nx-s1-5957544/star-trek-anniversary</guid>
+      <content:encoded><![CDATA[<img src='https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x2250+0+0/resize/3000x2250!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F70%2F5e%2F828f6b814865b2bf4c37171bce5f%2Ftos-34-3.tif' alt='It's been 60 years since NBC aired the first episode of <em>Star Trek.</em> Above, Leonard Nimoy as Spock.'/><p>As <em>Star Trek</em> celebrates its 60th birthday, the long-running franchise is also grappling with the challenges of timing and technology. "Its audience is aging," says <em>Strange New Worlds</em> star Anson Mount.</p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5957544' />]]></content:encoded>
+      <dc:creator>Eric Deggans</dc:creator>
+    </item>
+    
+  </channel>
+</rss>

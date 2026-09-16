@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-written: the classic truncated feed, which the reader shows as-is with
+     a "Visitar site" button (grill decision G5). -->
+<rss version="2.0">
+  <channel>
+    <title>Feed truncado</title>
+    <link>https://truncated.example</link>
+    <description>Só os primeiros parágrafos</description>
+    <item>
+      <guid>trunc-1</guid>
+      <title>Artigo cortado</title>
+      <link>https://truncated.example/artigo</link>
+      <description><![CDATA[<p>O começo do artigo aparece aqui e então&#8230;</p><p><a href="https://truncated.example/artigo">Continue lendo</a></p>]]></description>
+      <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

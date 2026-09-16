@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-written: links and images given as relative paths, which must be
+     resolved against the site URL before being stored. -->
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>URLs relativas</title>
+    <link>https://relative.example/blog/</link>
+    <description>Tudo relativo</description>
+    <item>
+      <guid>rel-1</guid>
+      <title>Post relativo</title>
+      <link>/blog/post-1</link>
+      <content:encoded><![CDATA[<p>Veja <a href="../sobre">sobre</a>.</p><img src="imagens/capa.png" alt="capa">]]></content:encoded>
+      <pubDate>Tue, 15 Sep 2026 08:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

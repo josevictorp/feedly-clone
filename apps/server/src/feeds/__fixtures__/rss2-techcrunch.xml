@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>TechCrunch</title>
+	<atom:link href="https://techcrunch.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://techcrunch.com/</link>
+	<description>Startup and Technology News</description>
+	<lastBuildDate>Wed, 16 Sep 2026 23:19:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9.7</generator>
+
+<image>
+	<url>https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32</url>
+	<title>TechCrunch</title>
+	<link>https://techcrunch.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>US automakers could soon be forced to include AM radio for free</title>
+		<link>https://techcrunch.com/2026/09/16/us-automakers-could-soon-be-forced-to-include-am-radio-for-free/</link>
+		
+		<dc:creator><![CDATA[Kirsten Korosec]]></dc:creator>
+		<pubDate>Wed, 16 Sep 2026 22:37:08 +0000</pubDate>
+				<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[Ford]]></category>
+		<category><![CDATA[Rivian]]></category>
+		<category><![CDATA[Tesla]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3165052</guid>
+
+					<description><![CDATA[The House of Representatives, in rare bipartisan support, overwhelmingly approved legislation that would require new vehicles to include AM radio.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Noise wants to help everyday people  become paid content creators</title>
+		<link>https://techcrunch.com/2026/09/16/noise-wants-to-help-everyday-people-become-paid-content-creators/</link>
+		
+		<dc:creator><![CDATA[Dominic-Madori Davis]]></dc:creator>
+		<pubDate>Wed, 16 Sep 2026 21:35:00 +0000</pubDate>
+				<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[influencers]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3164524</guid>
+
+					<description><![CDATA[Marketing platform Noise is on a mission to help anyone with a smart phone make money from their content.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Pulley, a Carta rival, is shutting down</title>
+		<link>https://techcrunch.com/2026/09/16/pulley-a-carta-rival-is-shutting-down/</link>
+		
+		<dc:creator><![CDATA[Dominic-Madori Davis]]></dc:creator>
+		<pubDate>Wed, 16 Sep 2026 21:23:19 +0000</pubDate>
+				<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Carta]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[Pulley]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3165128</guid>
+
+					<description><![CDATA[Cap table management platform Pulley, backed by General Catalyst, Stripe, and Founders Fund,   announced that it's closing shop in December.]]></description>
+		
+		
+		
+			</item>
+		
+	</channel>
+</rss>

@@ -26,6 +26,7 @@ Ao implementar UI, a referência é o Feedly real. Antes de construir uma tela, 
 
 | Arquivo | Atualize quando |
 |---|---|
+| `docs/prd/` (PRD da fatia atual) | Fechar um item do plano. O PRD é **documento vivo**: marque o checkbox do item entregue e atualize a tabela de progresso da seção 0. |
 | [MEMORY.md](MEMORY.md) | Descobrir algo que outra sessão precisaria saber: decisão tomada, achado sobre o Feedly, restrição técnica, preferência do usuário. Uma linha por item, com data. |
 | [BACKLOG.md](BACKLOG.md) | Algo ficar pendente, for adiado ou surgir como ideia fora do escopo atual. |
 | [CHANGELOG.md](CHANGELOG.md) | Concluir uma mudança relevante: feature, correção, decisão de arquitetura, mudança de stack. Formato Keep a Changelog. |

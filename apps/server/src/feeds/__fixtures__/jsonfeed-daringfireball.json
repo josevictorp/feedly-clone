@@ -1,0 +1,58 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Daring Fireball",
+  "home_page_url": "https://daringfireball.net/",
+  "feed_url": "https://daringfireball.net/feeds/json",
+  "authors": [
+    {
+      "url": "https://twitter.com/gruber",
+      "name": "John Gruber"
+    }
+  ],
+  "icon": "https://daringfireball.net/graphics/apple-touch-icon.png",
+  "favicon": "https://daringfireball.net/graphics/favicon-64.png",
+  "items": [
+    {
+      "title": "Xcode 27.2 Is Out, but 27.1 Is Not, Which Means Developers Still Can’t Get Started on Duo-Adapted Apps",
+      "date_published": "2026-09-16T22:40:41Z",
+      "date_modified": "2026-09-16T22:53:35Z",
+      "id": "https://daringfireball.net/linked/2026/09/16/xcode-27-iphone-duo",
+      "url": "https://daringfireball.net/linked/2026/09/16/xcode-27-iphone-duo",
+      "external_url": "https://developer.apple.com/documentation/xcode-release-notes/xcode-27_2-release-notes",
+      "authors": [
+        {
+          "name": "John Gruber"
+        }
+      ],
+      "content_html": "\n<p>A note flagged “Important” atop the Xcode 27.2 release notes:</p>\n\n<blockquote>\n  <p>The iOS SDK and simulator support for iPhone Duo will be available\nlater this month in an upcoming release of Xcode 27.1.</p>\n</blockquote>\n\n<p>Adapting apps for the Duo is not just a simple “recompile with the new SDK”. It’s different. For just about all apps it’s going to be a significant amount of work, and for some apps it’s going to be a <em>lot</em> of work. But without Xcode 27.1, developers cannot get started. Developers wanted this SDK a week ago. And when day one preorder buyers start using their Duos on October 23, they’re going to wish Apple had shipped this SDK last week too.</p>\n\n<p class=\"x-netnewswire-hide\" style=\"padding-top: 1.5em;\"><em>Link: <strong><a href=\"https://developer.apple.com/documentation/xcode-release-notes/xcode-27_2-release-notes\">developer.apple.com/documentation/xcode-release-notes/xcode…</a></strong></em></p>\n"
+    },
+    {
+      "title": "Is That a Duo in Ternus’s Pocket or Was He Just Happy That Apple TV Shows Won 28 Emmys?",
+      "date_published": "2026-09-16T22:21:30Z",
+      "date_modified": "2026-09-16T22:21:30Z",
+      "id": "https://daringfireball.net/linked/2026/09/16/duo-ternus-pocket",
+      "url": "https://daringfireball.net/linked/2026/09/16/duo-ternus-pocket",
+      "external_url": "https://x.com/DEADLINE/status/2099645816361332775",
+      "authors": [
+        {
+          "name": "John Gruber"
+        }
+      ],
+      "content_html": "\n<p>Note the reaction from the Deadline reporter.</p>\n\n<p class=\"x-netnewswire-hide\" style=\"padding-top: 1.5em;\"><em>Link: <strong><a href=\"https://x.com/DEADLINE/status/2099645816361332775\">x.com/DEADLINE/status/2099645816361332775</a></strong></em></p>\n"
+    },
+    {
+      "title": "Woz Launches Merch Store",
+      "date_published": "2026-09-16T21:38:27Z",
+      "date_modified": "2026-09-16T22:54:15Z",
+      "id": "https://daringfireball.net/linked/2026/09/16/woz",
+      "url": "https://daringfireball.net/linked/2026/09/16/woz",
+      "external_url": "https://x.com/stevewoz/status/2100074363605397658",
+      "authors": [
+        {
+          "name": "John Gruber"
+        }
+      ],
+      "content_html": "\n<p>Steve Wozniak:</p>\n\n<blockquote>\n  <p>I’ve decided it’s time to have a little more fun on X this\nyear! 😄⚡</p>\n\n<p>I get to speak at some amazing events, meet fascinating people,\nhear great stories, and occasionally find myself in places I\nnever expected to be. So I figured… why not share some of those\nmoments here?</p>\n</blockquote>\n\n<p>He announced this on X, you will note, not “social media”.</p>\n\n<p class=\"x-netnewswire-hide\" style=\"padding-top: 1.5em;\"><em>Link: <strong><a href=\"https://x.com/stevewoz/status/2100074363605397658\">x.com/stevewoz/status/2100074363605397658</a></strong></em></p>\n"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Hand-written: a latin-1 feed. Decoded as UTF-8 the accents turn to
+     replacement characters, so charset detection has to run before the parse. -->
+<rss version="2.0">
+  <channel>
+    <title>Notícias em Português</title>
+    <link>https://latin1.example</link>
+    <description>Acentuação em ISO-8859-1</description>
+    <item>
+      <guid>latin-1</guid>
+      <title>Informação e manutenção</title>
+      <link>https://latin1.example/1</link>
+      <description>Acúmulo de água no são João.</description>
+      <pubDate>Tue, 15 Sep 2026 07:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

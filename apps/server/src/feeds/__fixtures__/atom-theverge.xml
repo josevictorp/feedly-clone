@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><feed
+	xmlns="http://www.w3.org/2005/Atom"
+	xmlns:thr="http://purl.org/syndication/thread/1.0"
+	xml:lang="en-US"
+	>
+	<title type="text">The Verge</title>
+	<subtitle type="text">The Verge is about technology and how it makes us feel. Founded in 2011, we offer our audience everything from breaking news to reviews to award-winning features and investigations, on our site, in video, and in podcasts.</subtitle>
+
+	<updated>2026-09-16T21:03:21+00:00</updated>
+
+	<link rel="alternate" type="text/html" href="https://www.theverge.com" />
+	<id>https://www.theverge.com/rss/index.xml</id>
+	<link rel="self" type="application/atom+xml" href="https://www.theverge.com/rss/index.xml" />
+
+	<icon>https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/verge-rss-large_80b47e.png?w=150&amp;h=150&amp;crop=1</icon>
+		<entry>
+			
+			<author>
+				<name>Andrew Webster</name>
+			</author>
+			
+			<title type="html"><![CDATA[The 2.5-hour AI-generated Odyssey movie is 2.5 hours too long]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/entertainment/996499/ai-odyssey-movie-review" />
+			<id>https://www.theverge.com/?p=996499</id>
+			<updated>2026-09-16T17:03:21-04:00</updated>
+			<published>2026-09-16T16:59:13-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="Entertainment" /><category scheme="https://www.theverge.com" term="Film" /><category scheme="https://www.theverge.com" term="Movie Review" />
+							<summary type="html"><![CDATA[Christopher Nolan's engrossing take on The Odyssey dominated at the box office and spurred a newfound interest in classic literature among filmgoers. But a new retelling of the story made entirely with AI is so bad that it might just make viewers hate the original tale altogether. The new film, called Odysseus: The Fall, comes [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="" data-caption="" data-portal-copyright="Image: Fountain 0" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Screenshot-2026-09-16-at-4.19.06-PM.png?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">Christopher Nolan's engrossing take on <em>The Odyssey</em> dominated at the box office and <a href="https://www.theguardian.com/books/2026/aug/03/the-odyssey-book-sales">spurred a newfound interest in classic literature</a> among filmgoers. But a new retelling of the story made entirely with AI is so bad that it might just make viewers hate the original tale altogether.</p>
+<p class="wp-block-paragraph">The new film, called <em>Odysseus: The Fall</em>, comes via AI firm Fountain 0 and is written and directed by company cofounder Ash Koosha, who also lent his likeness to the title character <em>and</em> created all of the music. (The film's credits are very short.) The studio's only previous work is an AI film called <em>Dreams of Violets</em> that <a href="https://www.theverge.com/entertainment/939067/ai-film-dreams-of-violets-tribeca">made it into Tribeca earlier this year</a>. <em>Th …</em></p>
+<p><a href="https://www.theverge.com/entertainment/996499/ai-odyssey-movie-review">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Justine Calma</name>
+			</author>
+			
+			<title type="html"><![CDATA[The AI data center e-waste problem is huge — and getting bigger]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban" />
+			<id>https://www.theverge.com/?p=996470</id>
+			<updated>2026-09-16T16:40:46-04:00</updated>
+			<published>2026-09-16T16:40:46-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="Environment" /><category scheme="https://www.theverge.com" term="Science" />
+							<summary type="html"><![CDATA[E-waste from the AI boom has been vastly underestimated, a new report warns. By 2050, it could become enough trash to fill 23 million shipping containers - roughly enough 40-foot containers to circle the world six times if lined up in a row. It's a significantly higher estimate of AI's e-waste than previous studies have [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="Photo collage of a server room with data visualizations." data-caption="" data-portal-copyright="Image: Cath Virginia / The Verge; Getty Images" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STKS528_DATA_CENTERS_C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">E-waste from the AI boom has been vastly underestimated, a new <a href="https://wiki.ban.org/images/1/16/AI_Waste_Wave_Part_1.pdf">report</a> warns. By 2050, it could become enough trash to fill 23 million shipping containers - roughly enough 40-foot containers to circle the world six times if lined up in a row. </p>
+<p class="wp-block-paragraph">It's a significantly higher estimate of AI's e-waste than previous studies have found because the authors of the new report factor in all the infrastructure needed to support servers in data centers. The broader scope provides a clearer picture of junk AI leaves behind, according to the nonprofit <a href="https://www.ban.org/">Basel Action Network (BAN)</a>, which published the paper today. </p>
+<p class="wp-block-paragraph">"AI may feel weightless, but every model dep …</p>
+<p><a href="https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Charles Pulliam-Moore</name>
+			</author>
+			
+			<title type="html"><![CDATA[Resident Evil is a comedy first and a thrilling nightmare second]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/entertainment/996416/resident-zach-cregger-review" />
+			<id>https://www.theverge.com/?p=996416</id>
+			<updated>2026-09-16T14:45:35-04:00</updated>
+			<published>2026-09-16T14:45:35-04:00</published>
+			<category scheme="https://www.theverge.com" term="Entertainment" /><category scheme="https://www.theverge.com" term="Film" /><category scheme="https://www.theverge.com" term="Gaming" /><category scheme="https://www.theverge.com" term="Movie Review" />
+							<summary type="html"><![CDATA[When Paul W.S. Anderson's Resident Evil hit theaters in 2002, video game movies were largely seen as a niche. Films like Mortal Kombat and Tomb Raider had proven that big-screen game adaptations could be successful, but the commercial and critical failure of projects like the 1993 Super Mario Bros. still cast a long shadow. And [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="A man in winter clothing standing in the middle of a city street while holding a gun." data-caption="" data-portal-copyright="Image: Columbia Pictures" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DF-04181_r.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">When Paul W.S. Anderson's <em>Resident Evil </em>hit theaters in 2002, video game movies were largely seen as a niche. Films like <em>Mortal Kombat</em> and <em>Tomb Raider</em> had proven that big-screen game adaptations could be successful, but the commercial and critical failure of projects like the 1993 <em>Super Mario Bros.</em> still cast a long shadow. And while Anderson's vision of Raccoon City might have captivated audiences on the whole, many hardcore fans of Capcom's games were left disappointed by the way the original movies wildly deviated from the source material.</p>
+<p class="wp-block-paragraph"><a href="https://www.theverge.com/movie-reviews/719762/weapons-review"><em>Weapons</em></a><em> </em>director Zach Cregger's new take on <em>Resident Evil </em>is a return to the franchise's fundamenta …</p>
+<p><a href="https://www.theverge.com/entertainment/996416/resident-zach-cregger-review">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			
+	</feed>

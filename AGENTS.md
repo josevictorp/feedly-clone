@@ -25,6 +25,7 @@ Clone local do Feedly com fidelidade visual total e recursos premium. Sem hosped
 
 ## Ao terminar
 
+- Marque no PRD (`docs/prd/`) os checkboxes do que foi entregue e atualize a tabela de progresso da seção 0. O PRD é documento vivo.
 - Atualize [HANDOFF.md](HANDOFF.md) com o estado exato e o próximo passo.
 - Registre mudanças relevantes em [CHANGELOG.md](CHANGELOG.md).
 - Registre bugs e armadilhas em [INCIDENTS.md](INCIDENTS.md).

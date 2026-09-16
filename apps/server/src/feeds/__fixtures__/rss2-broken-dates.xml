@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-written: publication dates that are unparseable, empty, or in the
+     future. The normalizer must never produce NaN or a future timestamp. -->
+<rss version="2.0">
+  <channel>
+    <title>Datas quebradas</title>
+    <link>https://dates.example</link>
+    <description>Datas impossíveis</description>
+    <item>
+      <guid>dates-1</guid>
+      <title>Data ilegível</title>
+      <link>https://dates.example/1</link>
+      <pubDate>not a date at all</pubDate>
+    </item>
+    <item>
+      <guid>dates-2</guid>
+      <title>Data vazia</title>
+      <link>https://dates.example/2</link>
+      <pubDate></pubDate>
+    </item>
+    <item>
+      <guid>dates-3</guid>
+      <title>Data no futuro</title>
+      <link>https://dates.example/3</link>
+      <pubDate>Mon, 01 Jan 2091 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <guid>dates-4</guid>
+      <title>Sem data nenhuma</title>
+      <link>https://dates.example/4</link>
+    </item>
+  </channel>
+</rss>
