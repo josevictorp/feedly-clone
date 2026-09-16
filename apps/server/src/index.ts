@@ -4,6 +4,8 @@ import { join, relative } from 'node:path'
 import { serve } from '@hono/node-server'
 import { serveStatic } from '@hono/node-server/serve-static'
 import { createApp } from './app.ts'
+import { createEventBus } from './events/events.ts'
+import { createScheduler } from './scheduler/scheduler.ts'
 import { ensureDataDir, loadConfig, type ServerConfig } from './config.ts'
 import { openDatabase, type AppDatabase } from './db/client.ts'
 import { runMigrations } from './db/migrate.ts'
@@ -44,9 +46,16 @@ function openBrowser(url: string): void {
 function main(): void {
   const config: ServerConfig = loadConfig()
   ensureDataDir(config)
-  bootDatabase(config)
+  const db = bootDatabase(config)
 
-  const app = createApp()
+  const events = createEventBus((error) =>
+    logger.warn({ err: error }, 'event listener failed'),
+  )
+  const scheduler = createScheduler({ db, events, logger })
+
+  const app = createApp({ db, events, scheduler, logger, dataDir: config.dataDir })
+
+  scheduler.start()
 
   // The SPA is only present after `pnpm build`; in `pnpm dev` Vite serves it.
   if (existsSync(config.webDistDir)) {

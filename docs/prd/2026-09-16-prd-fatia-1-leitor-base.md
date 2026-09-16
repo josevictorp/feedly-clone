@@ -14,8 +14,8 @@ Marque cada item ao entregá-lo: um marco só conta como fechado com testes verd
 | M0. Fundação | ✅ concluído | 2026-09-16 |
 | M1. Banco e modelo | ✅ concluído | 2026-09-16 |
 | M2. Motor de feeds | ✅ concluído | 2026-09-16 |
-| M3. Agendador, API e SSE | 🚧 em andamento | — |
-| M4. Design system e casca | ⬜ pendente (gate visual) | — |
+| M3. Agendador, API e SSE | ✅ concluído | 2026-09-16 |
+| M4. Design system e casca | ⬜ próximo (gate visual, para aprovação) | — |
 | M5. Streams nos quatro modos | ⬜ pendente (gate visual) | — |
 | M6. Leitor | ⬜ pendente (gate visual) | — |
 | M7. Today, Discover, Onboarding, Organize, Ir para, atalhos | ⬜ pendente (gate visual) | — |
@@ -174,15 +174,15 @@ Entrega: dado bytes de um feed, entradas normalizadas no banco; dada uma URL, fe
 
 Testes: unitários de cada etapa com as fixtures; OPML de ida e volta.
 
-### M3. Agendador, API e SSE 🚧
+### M3. Agendador, API e SSE ✅
 
 Entrega: servidor completo, usável por curl.
 
-- [ ] Agendador com fila, concorrência 4, GET condicional, backoff, refresh prioritário, boot.
-- [ ] Todas as rotas da spec com validação Zod em `packages/shared`.
-- [ ] SSE em `/api/events` e emissão de eventos pelo agendador e pelas mutações.
-- [ ] Servidor de feeds falso para testes (fixtures, relógio fixo, respostas 304 e 500 sob comando).
-- [ ] Logs pino por fetch.
+- [x] Agendador com fila, concorrência 4, GET condicional, backoff, refresh prioritário, boot.
+- [x] Todas as rotas da spec com validação Zod em `packages/shared`.
+- [x] SSE em `/api/events` e emissão de eventos pelo agendador e pelas mutações.
+- [x] Servidor de feeds falso para testes (fixtures, relógio fixo, respostas 304 e 500 sob comando).
+- [x] Logs pino por fetch.
 
 Testes: integração de todas as rotas; agendador com relógio falso (backoff, condicional, refresh); SSE recebe eventos.
 
