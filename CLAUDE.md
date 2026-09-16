@@ -46,7 +46,7 @@ Em `.claude/skills/`:
 
 - **Idioma:** o usuário escreve em português. Responda em português. Documentação do projeto em português. Código, comentários, nomes de variáveis, commits e nomes de arquivo em inglês.
 - **Commits:** commite a cada mudança significativa (nova doc, decisão registrada, spec, fatia implementada, correção). Não acumule trabalho sem commit. Mensagens em inglês, imperativo, curtas, terminando com `Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>`. Nunca faça push sem o usuário pedir.
-- **Stack:** ainda não definida. Será decidida na spec e registrada aqui e em AGENTS.md. Até lá, não assuma framework nenhum.
+- **Stack (fixada na spec, seção 13):** Node 26, pnpm, TypeScript estrito. Servidor: Hono + @hono/node-server, Drizzle 0.45 + better-sqlite3 13, feedsmith 2.x, sanitize-html, pino. Front: Vite 8, React 19, react-router, TanStack Query e Virtual, Zustand, CSS Modules, fontes locais (Inter, Merriweather, Noto Sans, OpenDyslexic). Testes: Vitest, Playwright. Não troque sem passar pelo brainstorm.
 - **Escopo:** o projeto é grande e será decomposto em sub-projetos ordenados. Cada sub-projeto tem sua própria spec → plano → execução. Não misture sub-projetos numa mesma fatia.
 - **YAGNI:** nada além do que a spec aprovada pede.
 - **Testes:** definidos na spec. Nenhuma fatia é "concluída" sem os testes que o plano pedir.

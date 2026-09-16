@@ -32,7 +32,7 @@ Clone local do Feedly com fidelidade visual total e recursos premium. Sem hosped
 
 ## Stack e comandos
 
-Ainda não definidos. Quando a spec for aprovada, esta seção vai listar: stack, como instalar, como rodar, como testar, como fazer lint.
+Stack fixada na spec (seção 13): Node 26, pnpm, TypeScript; Hono, Drizzle + better-sqlite3, feedsmith; Vite, React 19, TanStack Query/Virtual, Zustand, CSS Modules; Vitest, Playwright. Comandos (`pnpm dev`, `pnpm start`, `pnpm test`, `pnpm lint`, `pnpm typecheck`) passam a existir no marco M0 do PRD; até lá não há o que rodar.
 
 ## Skills
 
