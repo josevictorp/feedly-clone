@@ -6,22 +6,39 @@ Sobrescreva a seção "Estado atual" ao fim de cada sessão. Não acumule histó
 
 **Data:** 2026-09-16
 
-**Fase:** design. Etapa 1 do fluxo (brainstorm) em andamento. Nenhum código de app.
+**Fase:** EXECUÇÃO liberada. Spec e PRD aprovados pelo usuário. Nenhum código de app escrito ainda. Próximo marco: **M0 (Fundação)**.
 
-**Feito nesta sessão:**
-- Skills instaladas (brainstorming, grill-me, grilling).
-- Arquivos de controle criados (README, CLAUDE.md, AGENTS.md, MEMORY, BACKLOG, CHANGELOG, HANDOFF, INCIDENTS).
-- Pesquisa sobre o Feedly (features por tier, UI, cores, atalhos, API, clones open source) disparada em segundo plano.
+**Documentos que governam a execução (leia nesta ordem):**
+1. `CLAUDE.md` — regras, convenções, commits.
+2. `docs/prd/2026-09-16-prd-fatia-1-leitor-base.md` — requisitos (RF/RNF) e plano em 10 marcos (M0 a M9). Seção 8 tem o que entregar em cada marco; seção 11 tem o processo.
+3. `docs/superpowers/specs/2026-09-16-feedly-clone-leitor-base-design.md` — design detalhado. Seção 13 = stack e versões fixadas. Seção 14 = decisões da grelha.
+4. `docs/research/README.md` — índice das capturas e do CSS extraído; `docs/research/feedly-research.md` seções 2.1 e 2.9 a 2.11 = tokens de cor, fontes, dimensões.
+5. `MEMORY.md` e `INCIDENTS.md`.
 
-**No meio:**
-- Brainstorm classificado como arquitetural. Primeira pergunta feita ao usuário (forma do produto: app desktop, web em localhost com servidor local, ou só navegador). Usuário respondeu B: web app em localhost com servidor local. Q2 (ordem dos sub-projetos) aprovada: leitor base → organização premium → Leo → descoberta. Q3: capturas concluídas (docs/research/README.md). Q4: stack sem restrições. Q5: UI em português. Q6 aceite aprovado. Abordagem A escolhida. Apresentando design em seções (1 arquitetura/pastas, 2 modelo de dados, 3 motor de feeds, 4 API, 5 front/design system, 6 i18n e preferências, 7 erros, 8 testes). Seções 1 (arquitetura) e 2 (modelo de dados) aprovadas. Seção 3 (motor de feeds) aprovada. Seção 4 (API) aprovada. Seções 5-8 aprovadas. Spec escrita e auto-revisada em docs/superpowers/specs/2026-09-16-feedly-clone-leitor-base-design.md. Grelha concluída (3 rodadas, 21 decisões, seção 14 da spec). Entendimento confirmado. PRD escrito em docs/prd/2026-09-16-prd-fatia-1-leitor-base.md (42 RF, 6 RNF, 10 marcos M0-M9). Aguardando aprovação do usuário. Nenhum código ainda. Conteúdo aprovado será consolidado na spec ao final.
+**Feito nesta sessão (2026-09-16):**
+- Brainstorm (7 perguntas, 8 seções de design), grelha (21 decisões), spec, PRD. Tudo aprovado.
+- 72 capturas do Feedly real + DOM + tokens em `docs/research/`.
+- Docs de controle criados. Skills instaladas em `.claude/skills/`.
 
-**Próximo passo exato:**
-1. Receber resposta da Q1 e continuar as perguntas uma por vez.
-2. Propor 2 a 3 abordagens, apresentar design em seções, obter aprovação.
-3. Spec escrita (feito).
-4. Grelha feita.
-5. PRD escrito.
-6. Esperar aprovação do usuário. Só então executar, começando por M0.
+**Próximo passo exato: executar o M0 conforme o PRD, seção 8.**
+- Monorepo pnpm (`apps/server`, `apps/web`, `packages/shared`), `.nvmrc` = 26, TS estrito, ESLint, Prettier.
+- Server Hono com `/api/health` e estáticos; web Vite + React 19 com página em branco e título "Feedly"; shared com build.
+- Scripts `pnpm dev`, `build`, `start` (abre navegador), `test`, `lint`, `typecheck`.
+- Vitest e Playwright com um teste cada. `data/` + `FEEDLY_DATA_DIR` + `PORT`.
+- README "como rodar" e AGENTS.md com comandos.
+- Pronto quando `pnpm start` abre `http://localhost:3000` e `pnpm test` passa. Commitar e atualizar CHANGELOG/HANDOFF. Depois seguir para M1.
+
+**Regras que valem na execução:**
+- Só o que está no PRD. Ideia nova → BACKLOG.md. Feature nova → brainstorm antes.
+- Commit a cada mudança significativa. Nunca push sem pedir.
+- Português nas respostas e docs; inglês no código e commits.
+- Perguntas de decisão via componente do VS Code (AskUserQuestion), não no corpo do chat.
+- M0 a M3 são aprovados por testes; M4 a M8 fecham com gate visual e aprovação do usuário; M9 fecha a fatia.
+- Bugs e armadilhas → INCIDENTS.md.
+
+**Ambiente:**
+- Node 26.8.1 instalado, pnpm via npx ou corepack (verificar). Chrome 153.
+- Chrome de captura: perfil em `~/.local/share/feedly-clone/chrome-profile`, porta 9333, ver `docs/research/README.md` para recapturar.
+- OPML real do usuário ainda NÃO foi exportado; pedir ao usuário antes do M9 (Feedly → Preferences → Privacy & Personal Data → Export OPML) e salvar em `data/feedly-export.opml`.
 
 **Pendências abertas:** ver BACKLOG.md.

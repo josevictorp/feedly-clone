@@ -23,5 +23,7 @@ Formato: `- [ ] descrição — origem (data) — observação`
 
 ## Documentação
 
+- [ ] Usuário exportar o OPML real do Feedly para `data/feedly-export.opml` antes do M9 — PRD M9 (2026-09-16)
+
 - [ ] Capturar telas exclusivas de Pro/Pro+ (Boards com conteúdo, notas/highlights, Leo priority/mute, busca full) — conta atual é gratuita — (2026-09-16)
 

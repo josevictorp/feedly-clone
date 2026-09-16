@@ -23,6 +23,8 @@ Uma linha por item, com data. Fatos, decisões e achados que outra sessão preci
 - 2026-09-16 — Grelha (21 decisões) registrada na seção 14 da spec; todas seguiram a recomendação. Stack fixada na seção 13: Node 26, pnpm, Hono, Drizzle 0.45 + better-sqlite3 13, feedsmith 2.x, Vite 8, React 19, TanStack Query/Virtual, Zustand, CSS Modules, Vitest, Playwright.
 - 2026-09-16 — Usuário prefere perguntas via componente do VS Code (AskUserQuestion), não no corpo do chat.
 
+- 2026-09-16 — PRD da fatia 1 APROVADO pelo usuário. Execução liberada, começando pelo M0. Usuário vai executar em nova sessão com Opus.
+
 ## Achados sobre o Feedly
 
 - 2026-09-16 — Pesquisa completa em `docs/research/feedly-research.md`: tiers e limites, tokens de cor light/dark/night extraídos do CSS de produção, fontes (Inter no app), dimensões de sidebar/header/cards, atalhos, modelo de dados da API (streams, categories, entries, tags, markers), clones open source e stacks.

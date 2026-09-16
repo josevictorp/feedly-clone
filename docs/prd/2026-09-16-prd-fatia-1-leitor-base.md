@@ -1,7 +1,7 @@
 # PRD: Feedly Clone, fatia 1 (leitor base)
 
 Data: 2026-09-16
-Status: aguardando aprovação do usuário
+Status: APROVADO pelo usuário em 2026-09-16. Execução liberada a partir do M0.
 Spec de origem: `docs/superpowers/specs/2026-09-16-feedly-clone-leitor-base-design.md` (seções 13 e 14 trazem a stack e as decisões da grelha)
 Referência visual: `docs/research/`
 

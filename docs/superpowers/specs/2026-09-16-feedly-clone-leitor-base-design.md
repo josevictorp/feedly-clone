@@ -1,7 +1,7 @@
 # Spec de design: Feedly Clone, fatia 1 (leitor base)
 
 Data: 2026-09-16
-Status: aprovada em conversa e refinada pela grelha (seção 14); aguardando confirmação final
+Status: APROVADA (2026-09-16). Refinada pela grelha (seção 14). PRD derivado em docs/prd/.
 Referências: `docs/research/feedly-research.md`, `docs/research/screenshots/`, `docs/research/dom/`
 
 ## 1. Objetivo
