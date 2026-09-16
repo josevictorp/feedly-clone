@@ -1,0 +1,10 @@
+{
+  "bodyFont": "InterVariable, \"InterVariable Fallback\", sans-serif",
+  "bodyBg": "rgb(255, 255, 255)",
+  "htmlClass": "merriweather",
+  "bodyClass": "home theme--light",
+  "vars": {
+    "--loading-gradient-background-color": "#f7f7f7",
+    "--loading-gradient-highlight-color": "#ecedee"
+  }
+}
