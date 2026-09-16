@@ -1,11 +1,36 @@
 import { spawn } from 'node:child_process'
 import { existsSync } from 'node:fs'
-import { relative } from 'node:path'
+import { join, relative } from 'node:path'
 import { serve } from '@hono/node-server'
 import { serveStatic } from '@hono/node-server/serve-static'
 import { createApp } from './app.ts'
 import { ensureDataDir, loadConfig, type ServerConfig } from './config.ts'
+import { openDatabase, type AppDatabase } from './db/client.ts'
+import { runMigrations } from './db/migrate.ts'
+import { scheduleRetention } from './db/retention.ts'
 import { logger } from './logger.ts'
+import { seedPreferences } from './preferences/preferences.repository.ts'
+
+/** Opens the database, brings the schema up to date and seeds the defaults. */
+function bootDatabase(config: ServerConfig): AppDatabase {
+  const databaseFile = join(config.dataDir, 'feedly.db')
+  const db = openDatabase(databaseFile)
+
+  const migration = runMigrations(db, { databaseFile })
+  if (migration.applied > 0) {
+    logger.info({ applied: migration.applied, backup: migration.backupFile }, 'migrations applied')
+  }
+
+  seedPreferences(db)
+
+  scheduleRetention(db, (result) => {
+    if (result.deletedByAge > 0 || result.deletedByCap > 0) {
+      logger.info(result, 'retention pass removed entries')
+    }
+  })
+
+  return db
+}
 
 /** Opens the given URL in the default browser. macOS is the supported target. */
 function openBrowser(url: string): void {
@@ -19,6 +44,7 @@ function openBrowser(url: string): void {
 function main(): void {
   const config: ServerConfig = loadConfig()
   ensureDataDir(config)
+  bootDatabase(config)
 
   const app = createApp()
 

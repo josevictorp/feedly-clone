@@ -1,5 +1,15 @@
 packages:
   - apps/*
   - packages/*
+
+# pnpm 12 blocks install scripts by default.
+# esbuild needs its postinstall to place the platform binary.
+# better-sqlite3 must NOT build: it ships prebuilt N-API binaries in
+# prebuilds/, and letting pnpm run the implicit `node-gyp rebuild` fails
+# (no node-gyp on the PATH) even though nothing needs compiling.
+allowBuilds:
+  better-sqlite3: false
+  esbuild: true
+
 minimumReleaseAgeExclude:
   - prettier@3.9.7

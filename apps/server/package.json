@@ -6,13 +6,20 @@
   "description": "Local Feedly clone server: API, feed scheduler and static hosting.",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsc --build",
-    "dev": "node --watch src/index.ts"
+    "build": "tsc --build && node ./scripts/copy-migrations.mjs",
+    "dev": "node --watch src/index.ts",
+    "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
     "@feedly/shared": "workspace:*",
     "@hono/node-server": "^2.1.1",
+    "better-sqlite3": "^13.0.3",
+    "drizzle-orm": "^0.45.2",
     "hono": "^4.13.8",
     "pino": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "drizzle-kit": "^0.31.10"
   }
 }
