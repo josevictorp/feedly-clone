@@ -31,6 +31,7 @@ Incluído:
 - Os quatro modos de leitura: Title-Only, Magazine, Cards, Article. Densidades Compact, Cozy, Comfortable no Title-Only.
 - Painel do artigo (leitor inline) e navegação entre artigos.
 - Lido/não lido, marcar tudo como lido, esconder lidos, ordenação.
+- Ler depois (salvar/dessalvar com `s`) e Lidos recentemente.
 - Página Today (aba "Me") agrupada por pasta.
 - Página Discover com busca por URL e diálogo de seguir.
 - Página Organize (lista de pastas e feeds com renomear, mover, remover).
@@ -40,7 +41,7 @@ Incluído:
 
 Excluído (fatias seguintes):
 
-- Ler depois, Lidos recentemente, Boards, tags, notas, highlights, busca full-text (fatia 2). A sidebar mostra "Ler depois" e "Lidos recentemente" com estado vazio para preservar o layout.
+- Boards, tags, notas, highlights, busca full-text (fatia 2). "Ler depois" (flag simples por entrada, tecla `s`) e "Lidos recentemente" (entradas por `read_at`) entram na fatia 1 porque o critério de aceite exige `s` e a sidebar exige as duas páginas; Boards de verdade ficam para a fatia 2.
 - Prioridade, mute, dedupe entre feeds, resumos, tópicos, Ask AI, AI Feeds (fatia 3). Os botões existem na UI e abrem um aviso "disponível em breve".
 - Explore por tópicos, newsletters, Reddit, YouTube, Google News, integrações, compartilhamento externo (fatia 4).
 - Autenticação e múltiplos usuários. Nunca previstos: app local de usuário único.
@@ -91,17 +92,18 @@ SQLite em `data/feedly.db`. Timestamps em inteiro (ms UTC). IDs inteiros autoinc
 
 **feed_categories**: `feed_id`, `category_id`, `sort_order`. Chave primária composta.
 
-**entries**: `id`, `feed_id`, `guid`, `url`, `title`, `author`, `summary` (texto puro, até 400 caracteres), `content_html` (sanitizado), `image_url`, `published_at`, `crawled_at`, `is_read`, `read_at`, `engagement` (nulo nesta fatia).
-Índices: `(feed_id, guid)` único, `(feed_id, is_read)`, `(published_at)`.
+**entries**: `id`, `feed_id`, `guid`, `url`, `title`, `author`, `summary` (texto puro, até 400 caracteres), `content_html` (sanitizado), `image_url`, `published_at`, `crawled_at`, `is_read`, `read_at`, `is_saved`, `saved_at`, `engagement` (nulo nesta fatia).
+Índices: `(feed_id, guid)` único, `(feed_id, is_read)`, `(published_at)`, `(is_saved, saved_at)`, `(read_at)`.
 
-**stream_settings**: `stream_id` (chave: `all`, `category:<id>`, `feed:<id>`), `view_mode`, `sort`, `hide_read`. Sobrescreve as preferências globais por stream.
+**stream_settings**: `stream_id` (chave: `all`, `category:<id>`, `feed:<id>`, `saved`, `read`), `view_mode`, `sort`, `hide_read`. Sobrescreve as preferências globais por stream.
 
 **preferences**: `key`, `value` (JSON). Chaves: `start_page` (today, first_folder, all), `default_view` (title_only, magazine, cards, article), `default_sort` (newest, oldest), `hide_read` (bool), `theme` (system, light, dark), `font_family` (merriweather, inter, sans_serif, open_dyslexic, noto_sans), `text_size` (small, medium, large, extra_large), `density` (compact, cozy, comfortable), `sidebar_pinned` (bool), `mark_read_on_scroll` (bool), `locale` (pt-BR).
 
 Regras:
 
 - Não lidos são calculados por consulta, nunca armazenados.
-- Retenção: job diário apaga entradas lidas com mais de 30 dias e aplica teto de 1000 entradas por feed, removendo as lidas mais antigas primeiro. Não lidas nunca são apagadas por retenção.
+- "Ler depois" é o stream `saved` (`is_saved = 1`, ordenado por `saved_at`). "Lidos recentemente" é o stream `read` (`is_read = 1`, ordenado por `read_at`, últimos 7 dias).
+- Retenção: job diário apaga entradas lidas com mais de 30 dias e aplica teto de 1000 entradas por feed, removendo as lidas mais antigas primeiro. Não lidas e salvas nunca são apagadas por retenção.
 - Dedupe apenas dentro do mesmo feed, por `guid`.
 - Deixar de seguir um feed apaga suas entradas.
 
@@ -138,7 +140,7 @@ Regras:
 
 JSON, prefixo `/api`, sem autenticação. Validação Zod com schemas em `packages/shared`. Erros: `{ error: { code, message } }`.
 
-Streams (`streamId` é `all`, `category:<id>` ou `feed:<id>`):
+Streams (`streamId` é `all`, `category:<id>`, `feed:<id>`, `saved` ou `read`):
 
 - `GET /api/streams/:streamId/entries?sort=newest|oldest&unreadOnly=bool&cursor=&limit=50` → paginado por cursor (`published_at` + `id`), com feed embutido.
 - `GET|PUT /api/streams/:streamId/settings` → `view_mode`, `sort`, `hide_read`.
@@ -149,6 +151,7 @@ Entries:
 
 - `GET /api/entries/:id` → com `content_html`.
 - `POST /api/entries/mark` `{ ids, read }`.
+- `POST /api/entries/save` `{ ids, saved }`.
 
 Feeds:
 
@@ -178,9 +181,9 @@ Convenções: paginação sempre por cursor; sem N+1; tempo em ms UTC; sem versi
 
 ## 8. Front e design system
 
-**Rotas**: `/i/my` (Today), `/i/collection/all`, `/i/collection/:categoryId`, `/i/subscription/:feedId`, `/i/saved`, `/i/read`, `/i/discover`, `/i/organize`. Artigo aberto é `?entry=<id>`; o botão voltar do navegador fecha o painel.
+**Rotas**: `/i/my` (Today), `/i/collection/all`, `/i/collection/:categoryId`, `/i/subscription/:feedId`, `/i/saved` (Ler depois), `/i/read` (Lidos recentemente), `/i/discover`, `/i/organize`. Artigo aberto é `?entry=<id>`; o botão voltar do navegador fecha o painel.
 
-**Layout raiz**: sidebar de 320 px (fixável, escondível com `[`, peek ao encostar na borda esquerda), header do stream (título, contador, ações: marcar tudo, refresh, mais opções; Ask AI e compartilhar presentes mas desabilitados), área central com largura máxima do Feedly, coluna "Você também pode gostar" visível apenas em Magazine e Cards (na fatia 1 mostra três feeds sugeridos a partir dos mais populares do OPML importado ou fica vazia).
+**Layout raiz**: sidebar de 320 px (fixável, escondível com `[`, peek ao encostar na borda esquerda), header do stream (título, contador, ações: marcar tudo, refresh, mais opções; Ask AI e compartilhar presentes mas desabilitados), área central com largura máxima do Feedly, coluna "Você também pode gostar" visível apenas em Magazine e Cards. Na fatia 1 ela renderiza o título e o botão "Explorar" sem sugestões; as sugestões vêm na fatia 4.
 
 **Design system**:
 
