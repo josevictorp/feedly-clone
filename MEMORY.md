@@ -20,11 +20,15 @@ Uma linha por item, com data. Fatos, decisões e achados que outra sessão preci
 - 2026-09-16 — Q7 abordagem escolhida: **A) SPA React (Vite + TS) + servidor Node único (API + agendador + estáticos) + SQLite (Drizzle)**. Next.js e SPA pura descartados.
 - 2026-09-16 — Conta do usuário no Feedly é o plano gratuito (botão Upgrade visível); telas exclusivas de Pro/Pro+ (Boards, Leo, notas) precisam de referência externa (docs/blog) ou de upgrade temporário.
 
+- 2026-09-16 — Grelha (21 decisões) registrada na seção 14 da spec; todas seguiram a recomendação. Stack fixada na seção 13: Node 26, pnpm, Hono, Drizzle 0.45 + better-sqlite3 13, feedsmith 2.x, Vite 8, React 19, TanStack Query/Virtual, Zustand, CSS Modules, Vitest, Playwright.
+- 2026-09-16 — Usuário prefere perguntas via componente do VS Code (AskUserQuestion), não no corpo do chat.
+
 ## Achados sobre o Feedly
 
 - 2026-09-16 — Pesquisa completa em `docs/research/feedly-research.md`: tiers e limites, tokens de cor light/dark/night extraídos do CSS de produção, fontes (Inter no app), dimensões de sidebar/header/cards, atalhos, modelo de dados da API (streams, categories, entries, tags, markers), clones open source e stacks.
 - 2026-09-16 — 72 capturas da UI real em `docs/research/screenshots/` (índice em `docs/research/README.md`) e HTML renderizado em `docs/research/dom/`. Cobrem: Today, All, pasta, feed, 4 modos de leitura, leitor inline, atalhos, preferências (8 abas), discover/follow, tema escuro, densidades, menus de sidebar/header/leitor, Boards, Ask AI.
 - 2026-09-16 — Feedly atual: sidebar 320px; header com Upgrade; ações do header: mark all read, Ask AI, share, refresh, more; modos Title-Only/Magazine/Cards/Article; leitor abre como painel deslizante à direita (exceto no Article view, que é inline); fonte do corpo do artigo é Merriweather por padrão (Inter opcional); temas System/Light/Dark (sem Night no menu atual); densidades Compact/Cozy/Comfortable.
+- 2026-09-16 — Aba Mark as Read do Feedly tem 5 opções: botão gigante (sim), auto-mark ao rolar (só Article view | todas | não; padrão só Article), ao navegar n/p (não), ao clicar no contador (não), menu "older than" no marcar tudo (sim). Menu Sort: Most Shared, Most Shared + Newest, Newest, Oldest. Filter: Unread Only, Show Muted. Sidebar recolhe feeds com 0 não lidos em "N more feeds".
 
 ## Restrições e contexto técnico
 

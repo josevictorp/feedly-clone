@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<opml version="1.0">
+    <head>
+        <title>José Victor subscriptions in feedly Cloud</title>
+    </head>
+    <body>
+        <outline text="Tech" title="Tech">
+            <outline type="rss" text="Engadget" title="Engadget" xmlUrl="http://www.engadget.com/rss-full.xml" htmlUrl="http://www.engadget.com"/>
+            <outline type="rss" text="The Atlantic " title="The Atlantic " xmlUrl="http://feeds.feedburner.com/TheAtlantic" htmlUrl="https://www.theatlantic.com/"/>
+            <outline type="rss" text="Bustle" title="Bustle" xmlUrl="https://www.bustle.com/rss" htmlUrl="https://www.bustle.com"/>
+            <outline type="rss" text="WSJ.com: US Business" title="WSJ.com: US Business" xmlUrl="http://online.wsj.com/xml/rss/3_7014.xml" htmlUrl="https://www.wsj.com/business"/>
+            <outline type="rss" text="Slate - Culture" title="Slate - Culture" xmlUrl="http://www.slate.com/rss" htmlUrl="https://slate.com/culture"/>
+            <outline type="rss" text="Vox - All" title="Vox - All" xmlUrl="http://www.vox.com/rss/index.xml" htmlUrl="https://www.vox.com"/>
+            <outline type="rss" text="NPR Topics: Pop Culture" title="NPR Topics: Pop Culture" xmlUrl="http://www.npr.org/rss/rss.php?id=1048" htmlUrl="https://www.npr.org/templates/story/story.php?storyId=1048"/>
+            <outline type="rss" text="AV Club" title="AV Club" xmlUrl="http://www.avclub.com/feed/rss/" htmlUrl="https://www.avclub.com"/>
+            <outline type="rss" text="Digital Trends" title="Digital Trends" xmlUrl="http://www.digitaltrends.com/feed/" htmlUrl="https://www.digitaltrends.com/"/>
+            <outline type="rss" text="Gizmodo" title="Gizmodo" xmlUrl="http://feeds.gawker.com/gizmodo/full" htmlUrl="https://gizmodo.com/"/>
+            <outline type="rss" text="Business Insider" title="Business Insider" xmlUrl="http://feeds2.feedburner.com/businessinsider" htmlUrl="https://www.businessinsider.com"/>
+            <outline type="rss" text="English - VICE" title="English - VICE" xmlUrl="http://www.vice.com/rss" htmlUrl="https://www.vice.com/en/"/>
+            <outline type="rss" text="Variety" title="Variety" xmlUrl="http://variety.com/feed/" htmlUrl="https://variety.com"/>
+            <outline type="rss" text="Vogue" title="Vogue" xmlUrl="http://www.vogue.com/rss/just-in/" htmlUrl="https://www.vogue.com"/>
+            <outline type="rss" text="Quartz" title="Quartz" xmlUrl="http://qz.com/feed/" htmlUrl="https://qz.com"/>
+            <outline type="rss" text="Business" title="Business" xmlUrl="http://www.huffingtonpost.com/feeds/verticals/business/index.xml" htmlUrl="https://www.huffpost.com/impact/business"/>
+            <outline type="rss" text="COOL HUNTING®" title="COOL HUNTING®" xmlUrl="http://www.coolhunting.com/atom.xml" htmlUrl="https://coolhunting.com"/>
+            <outline type="rss" text="Futurism" title="Futurism" xmlUrl="http://www.fromquarkstoquasars.com/feed/" htmlUrl="https://futurism.com"/>
+            <outline type="rss" text="WWDRecent Stories" title="WWDRecent Stories" xmlUrl="http://www.wwd.com/rss/2/news/recentstories" htmlUrl="https://wwd.com"/>
+            <outline type="rss" text="The Cut" title="The Cut" xmlUrl="https://www.thecut.com/feeds/flipboard.rss" htmlUrl="https://www.thecut.com"/>
+            <outline type="rss" text="Rolling Stone" title="Rolling Stone" xmlUrl="http://www.rollingstone.com/siteServices/rss/allNews" htmlUrl="https://www.rollingstone.com"/>
+            <outline type="rss" text="Complex | Music, Sneakers, Pop Culture, News &amp; Shows" title="Complex | Music, Sneakers, Pop Culture, News &amp; Shows" xmlUrl="http://cdnl.complex.com/feeds/channels/all.xml" htmlUrl="https://www.complex.com/index"/>
+            <outline type="rss" text="NYT &gt; Technology" title="NYT &gt; Technology" xmlUrl="http://www.nytimes.com/services/xml/rss/nyt/Technology.xml" htmlUrl="https://www.nytimes.com/section/technology"/>
+            <outline type="rss" text="Dazed" title="Dazed" xmlUrl="http://www.dazeddigital.com/rss" htmlUrl="https://www.dazeddigital.com/rss"/>
+            <outline type="rss" text="MIT Technology Review" title="MIT Technology Review" xmlUrl="http://www.technologyreview.com/rss/rss.aspx" htmlUrl="https://www.technologyreview.com"/>
+            <outline type="rss" text="Fast Company" title="Fast Company" xmlUrl="http://feeds.feedburner.com/fastcompany/headlines" htmlUrl="https://www.fastcompany.com"/>
+            <outline type="rss" text="Vulture" title="Vulture" xmlUrl="https://www.vulture.com/feeds/flipboard.rss" htmlUrl="http://www.vulture.com/"/>
+            <outline type="rss" text="TechCrunch" title="TechCrunch" xmlUrl="https://techcrunch.com/feed/" htmlUrl="https://techcrunch.com/"/>
+            <outline type="rss" text="Tecnoblog" title="Tecnoblog" xmlUrl="http://feeds.feedburner.com/tecnoblog" htmlUrl="https://tecnoblog.net/"/>
+            <outline type="rss" text="The Verge" title="The Verge" xmlUrl="http://www.theverge.com/rss/full.xml" htmlUrl="https://www.theverge.com"/>
+        </outline>
+        <outline text="Marketing" title="Marketing">
+            <outline type="rss" text="Copyblogger" title="Copyblogger" xmlUrl="http://feeds.copyblogger.com/Copyblogger" htmlUrl="https://copyblogger.com/"/>
+            <outline type="rss" text="Social Media Examiner" title="Social Media Examiner" xmlUrl="http://www.socialmediaexaminer.com/feed/" htmlUrl="https://www.socialmediaexaminer.com/"/>
+            <outline type="rss" text="Convince and Convert " title="Convince and Convert " xmlUrl="http://www.convinceandconvert.com/feed/" htmlUrl="https://www.convinceandconvert.com/"/>
+            <outline type="rss" text="Seth Godin's Blog " title="Seth Godin's Blog " xmlUrl="http://sethgodin.typepad.com/seths_blog/atom.xml" htmlUrl="https://seths.blog"/>
+            <outline type="rss" text="Hubspot" title="Hubspot" xmlUrl="http://blog.hubspot.com/CMS/UI/Modules/BizBlogger/rss.aspx?tabid=6307&amp;moduleid=8441&amp;maxcount=25" htmlUrl="https://blog.hubspot.com/marketing"/>
+        </outline>
+    </body>
+</opml>
