@@ -56,3 +56,24 @@ Formato de cada entrada:
 **Causa:** o `.prettierignore` inicial só excluía subpastas de `docs/research/`. Além disso, o alinhamento de tabela do Prettier conta bytes, não colunas, então tabelas com acentos ficam tortas.
 **Solução:** `git checkout` do que foi tocado e `.prettierignore` passou a excluir `docs/`, `.claude/` e `*.md`.
 **Como evitar:** Prettier cobre código e configuração; documentação deste projeto é escrita à mão (CLAUDE.md proíbe reescrever spec aprovada).
+
+## 2026-09-16 — pnpm 12 bloqueia scripts de instalação, e liberar o do better-sqlite3 quebra
+
+**Sintoma:** `pnpm add better-sqlite3` falha com `ERR_PNPM_IGNORED_BUILDS`. Ao liberar o build em `allowBuilds`, falha de novo com `node-gyp rebuild exited with status 127`.
+**Causa:** o pnpm 12 não roda scripts de instalação sem aprovação (chave `allowBuilds` no `pnpm-workspace.yaml`, não `onlyBuiltDependencies`). E o better-sqlite3 13 já traz binários N-API prontos em `prebuilds/`; como ele tem `binding.gyp`, aprovar o build dispara um `node-gyp rebuild` desnecessário, que falha porque não há node-gyp no PATH.
+**Solução:** `allowBuilds: { better-sqlite3: false, esbuild: true }`. O binário `darwin-arm64.node` do pacote é usado direto (SQLite 3.53.4 no Node 26).
+**Como evitar:** antes de liberar um build nativo, conferir se o pacote tem `prebuilds/`. Se tiver, o certo é **negar** o build.
+
+## 2026-09-16 — feedsmith recusa OPML degenerado nos dois sentidos
+
+**Sintoma:** `parseOpml('<opml><body></body></opml>')` lança "Invalid OPML format"; `generateOpml` com `outlines: []` lança "Invalid input OPML".
+**Causa:** o feedsmith exige que o documento tenha ou head com conteúdo ou pelo menos um outline.
+**Solução:** `parseOpmlDocument` embrulha o erro em `InvalidOpmlError` com mensagem em português (a API devolve 400); `exportOpml` gera à mão o documento mínimo quando não há nenhum feed.
+**Como evitar:** ao usar o feedsmith para OPML, tratar os dois extremos; o caminho feliz esconde ambos.
+
+## 2026-09-16 — Data legítima de feed virava "futuro" no teste
+
+**Sintoma:** o teste do feed RDF esperava a data real do item e recebia o `fetchedAt`.
+**Causa:** a normalização achata datas mais de 1 h à frente do fetch (defesa contra feed que se fixa no topo da lista). O relógio do teste estava antes da data das fixtures congeladas.
+**Solução:** `FETCHED_AT` dos testes fixado em 2026-09-17T12:00Z, depois de toda data das fixtures.
+**Como evitar:** ao congelar fixtures novas, conferir se a data mais recente delas é anterior ao relógio dos testes.

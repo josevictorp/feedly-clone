@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Reduced copy of the user's real Feedly export (grill decision G14): the
+     full file lives outside git, in data/feedly-export.opml. -->
+<opml version="1.0">
+    <head>
+        <title>José Victor subscriptions in feedly Cloud</title>
+    </head>
+    <body>
+        <outline text="Tech" title="Tech">
+            <outline type="rss" text="Engadget" title="Engadget" xmlUrl="http://www.engadget.com/rss-full.xml" htmlUrl="http://www.engadget.com"/>
+            <outline type="rss" text="The Atlantic " title="The Atlantic " xmlUrl="http://feeds.feedburner.com/TheAtlantic" htmlUrl="https://www.theatlantic.com/"/>
+            <outline type="rss" text="Bustle" title="Bustle" xmlUrl="https://www.bustle.com/rss" htmlUrl="https://www.bustle.com"/>
+            <outline type="rss" text="WSJ.com: US Business" title="WSJ.com: US Business" xmlUrl="http://online.wsj.com/xml/rss/3_7014.xml" htmlUrl="https://www.wsj.com/business"/>
+            <outline type="rss" text="Slate - Culture" title="Slate - Culture" xmlUrl="http://www.slate.com/rss" htmlUrl="https://slate.com/culture"/>
+        </outline>
+        <outline text="Marketing" title="Marketing">
+            <outline type="rss" text="Copyblogger" title="Copyblogger" xmlUrl="http://feeds.copyblogger.com/Copyblogger" htmlUrl="https://copyblogger.com/"/>
+            <outline type="rss" text="Social Media Examiner" title="Social Media Examiner" xmlUrl="http://www.socialmediaexaminer.com/feed/" htmlUrl="https://www.socialmediaexaminer.com/"/>
+            <outline type="rss" text="Convince and Convert " title="Convince and Convert " xmlUrl="http://www.convinceandconvert.com/feed/" htmlUrl="https://www.convinceandconvert.com/"/>
+            <outline type="rss" text="Seth Godin's Blog " title="Seth Godin's Blog " xmlUrl="http://sethgodin.typepad.com/seths_blog/atom.xml" htmlUrl="https://seths.blog"/>
+            <outline type="rss" text="Hubspot" title="Hubspot" xmlUrl="http://blog.hubspot.com/CMS/UI/Modules/BizBlogger/rss.aspx?tabid=6307&amp;moduleid=8441&amp;maxcount=25" htmlUrl="https://blog.hubspot.com/marketing"/>
+        </outline>
+    </body>
+</opml>

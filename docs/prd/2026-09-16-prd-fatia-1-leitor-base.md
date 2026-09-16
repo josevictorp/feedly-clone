@@ -13,8 +13,8 @@ Marque cada item ao entregá-lo: um marco só conta como fechado com testes verd
 |---|---|---|
 | M0. Fundação | ✅ concluído | 2026-09-16 |
 | M1. Banco e modelo | ✅ concluído | 2026-09-16 |
-| M2. Motor de feeds | 🚧 em andamento | — |
-| M3. Agendador, API e SSE | ⬜ pendente | — |
+| M2. Motor de feeds | ✅ concluído | 2026-09-16 |
+| M3. Agendador, API e SSE | 🚧 em andamento | — |
 | M4. Design system e casca | ⬜ pendente (gate visual) | — |
 | M5. Streams nos quatro modos | ⬜ pendente (gate visual) | — |
 | M6. Leitor | ⬜ pendente (gate visual) | — |
@@ -159,22 +159,22 @@ Entrega: schema completo com migrações e camada de acesso.
 
 Testes: unitários dos repositórios contra SQLite em memória; retenção; consulta de sidebar sem N+1.
 
-### M2. Motor de feeds 🚧
+### M2. Motor de feeds ✅
 
 Entrega: dado bytes de um feed, entradas normalizadas no banco; dada uma URL, feeds descobertos.
 
-- [ ] Fetch com timeout, User-Agent, decodificação de charset (header → prólogo XML → UTF-8) antes do parse.
-- [ ] Parser feedsmith e normalização (título, conteúdo, resumo, imagem, URLs relativas, datas, identidade).
-- [ ] Sanitização (sanitize-html com allowlist de iframe).
-- [ ] Descoberta de feed em três etapas.
-- [ ] Favicon com cache em `data/favicons/`.
-- [ ] OPML import e export.
-- [ ] Dedupe por feed com atualização de conteúdo sem tocar em `is_read`.
-- [ ] Fixtures: pelo menos 12 feeds reais congelados (RSS 2.0, Atom, JSON Feed, RDF, ISO-8859-1, sem guid, datas quebradas, HTML malicioso, conteúdo truncado, relativo, media RSS, feed do OPML real).
+- [x] Fetch com timeout, User-Agent, decodificação de charset (header → prólogo XML → UTF-8) antes do parse.
+- [x] Parser feedsmith e normalização (título, conteúdo, resumo, imagem, URLs relativas, datas, identidade).
+- [x] Sanitização (sanitize-html com allowlist de iframe).
+- [x] Descoberta de feed em três etapas.
+- [x] Favicon com cache em `data/favicons/`.
+- [x] OPML import e export.
+- [x] Dedupe por feed com atualização de conteúdo sem tocar em `is_read`.
+- [x] Fixtures: pelo menos 12 feeds reais congelados (RSS 2.0, Atom, JSON Feed, RDF, ISO-8859-1, sem guid, datas quebradas, HTML malicioso, conteúdo truncado, relativo, media RSS, feed do OPML real).
 
 Testes: unitários de cada etapa com as fixtures; OPML de ida e volta.
 
-### M3. Agendador, API e SSE
+### M3. Agendador, API e SSE 🚧
 
 Entrega: servidor completo, usável por curl.
 
